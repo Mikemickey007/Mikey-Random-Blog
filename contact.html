@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styling.css">
+    <title>Contact</title>
+</head>
+<body>
+<header>
+    <h1>Get in Touch</h1>
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="posts.html" class="nav-link">Posts</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" id="logout" class="nav-link">Logout</a>
+    </nav>
+</header>
+
+<div class="center-screen">
+    <div class="form-wrapper">
+        <h2>Send a Message</h2>
+        <form id="contactForm">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Mikey Random" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="mikey@example.com" required>
+            </div>
+            <div>
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="4" placeholder="I have a fact for you..."></textarea>
+            </div>
+            <button type="submit">Submit Fact</button>
+        </form>
+    </div>
+</div>
+
+<div id="welcomeMessage" class="hidden"></div>
+<div id="loading" class="hidden">Loading...</div>
+<button id="backToTop" class="hidden">↑ Top</button>
+
+<div class="bottom-settings-bar">
+    <div class="settings-group">
+        <span>Dark Mode:</span>
+        <label class="switch">
+            <input type="checkbox" id="darkToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="vertical-divider"></div>
+
+    <div class="font-controls">
+        <span>Font Size:</span>
+        <button type="button" data-size="small">Small</button>
+        <button type="button" data-size="medium">Medium</button>
+        <button type="button" data-size="large">Large</button>
+    </div>
+</div>
+
+<a href="sitemap.html" class="muted">Site Map</a>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styling.css">
+    <title>About Me</title>
+</head>
+<body>
+
+<header>
+    <h1>About Me</h1>
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="posts.html" class="nav-link">Posts</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" id="logout" class="nav-link">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <article>
+            <h2>My Story</h2>
+            <img src="../images/profile.jpg" alt="Mikey's Profile" style="width:100%; border-radius:var(--radius); margin-bottom:var(--space-md);">
+
+            <p>
+                It all started when I realized that the internet needed more randomness.
+                I’ve always been fascinated by small details that people usually overlook.
+                Whether I'm exploring the outdoors or diving into a book, I'm always looking for that
+                next "Did you know?" moment.
+            </p>
+            <p>
+                When I'm not writing for this blog, you can usually find me practicing my
+                hobbies or hanging out with my friends. This blog is my way of sharing
+                my curiosity with the world.
+            </p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <h3>My Photo Gallery</h3>
+            <p class="muted">A few snapshots from my random life.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                <img src="../images/photo1.jpg" alt="Moment 1" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius);">
+                <img src="../images/photo2.jpg" alt="Moment 2" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius);">
+                <img src="../images/photo3.jpg" alt="Moment 3" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius);">
+            </div>
+        </article>
+    </section>
+
+    <aside>
+        <h3>Fast Facts</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: var(--space-sm);">📍 <strong>Location:</strong> Earth (Mostly)</li>
+            <li style="margin-bottom: var(--space-sm);">☕ <strong>Fuel:</strong> Black Coffee</li>
+        </ul>
+        <hr style="border: 0; border-top: 1px solid #eee; margin: var(--space-md) 0;">
+        <button style="width: 100%;" onclick="location.href='contact.html'">Let's Chat!</button>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; This is Grestenberger Michael random fact blog page. All rights reserved.</p>
+</footer>
+
+<div id="welcomeMessage" class="hidden"></div>
+<div id="loading" class="hidden">Loading...</div>
+<button id="backToTop" class="hidden">↑ Top</button>
+
+<div class="bottom-settings-bar">
+    <div class="settings-group">
+        <span>Dark Mode:</span>
+        <label class="switch">
+            <input type="checkbox" id="darkToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="vertical-divider"></div>
+
+    <div class="font-controls">
+        <span>Font Size:</span>
+        <button type="button" data-size="small">Small</button>
+        <button type="button" data-size="medium">Medium</button>
+        <button type="button" data-size="large">Large</button>
+    </div>
+</div>
+
+<a href="sitemap.html" class="muted">Site Map</a>
+<script src="../js/main.js"></script>
+</body>
+</html>

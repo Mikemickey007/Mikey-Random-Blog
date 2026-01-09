@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styling.css">
+    <title>Posts</title>
+</head>
+<body>
+
+<header>
+    <h1>Random Facts</h1>
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="posts.html" class="nav-link">Posts</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" id="logout" class="nav-link">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <section id="posts-feed">
+        <article>
+            <small class="muted">Nature #1</small>
+            <h3>The Immortal Jellyfish &#129724;</h3>
+            <p>The *Turritopsis dohrnii* can technically live forever. It can transform its cells back to their earliest form and start its life cycle all over again.</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Space #2</small>
+            <h3>Diamond Rain &diams;</h3>
+            <p>On Saturn and Jupiter, it literally rains diamonds. The intense pressure turns carbon into crystals before they fall to the planet's core.</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Animals #3</small>
+            <h3>Cow Friendships &#128046;</h3>
+            <p>Cows have "best friends" and they get stressed out when they are separated from one another.</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">History #4</small>
+            <h3>The Shortest War &#x2694;</h3>
+            <p>The Anglo-Zanzibar War of 1896 is the shortest war in history, lasting only 38 minutes before a surrender was called.</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Science #5</small>
+            <h3>Human Atoms &#128104;&#9883;</h3>
+            <p>If you removed all the "empty space" from the atoms that make up every human on Earth, the entire population would fit inside a single sugar cube.</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Animals #6</small>
+            <h3>Platypus Glow &#x1F9AB;</h3>
+            <p>Under a UV light, a platypus glows a blue-green color. Scientists still aren't entirely sure why this happens!</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Geography #7</small>
+            <h3>Moving Mountains &#9968;</h3>
+            <p>Mount Everest shrinks and grows. Due to tectonic activity, it moves about 4cm northeast every single year.</p>
+
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Food #8</small>
+            <h3>Strawberry Lies &#127827;</h3>
+            <p>Strawberries are not actually berries, but bananas, pumpkins, and watermelons technically are!</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Human Body #9</small>
+            <h3>Unique Tongues &#128069;</h3>
+            <p>Just like fingerprints, every single person has a completely unique tongue print.</p>
+        </article>
+
+        <article style="margin-top: var(--space-md);">
+            <small class="muted">Technology #10</small>
+            <h3>The First Bug &#128027;</h3>
+            <p>The term "computer bug" was coined when a literal moth got stuck inside a computer at Harvard in 1947.</p>
+        </article>
+    </section>
+
+    <aside>
+        <h3>Search Archive</h3>
+        <input type="search" placeholder="Search facts..." style="margin-bottom: var(--space-md);">
+        <h3>Fact of the Day</h3>
+        <p class="muted">A group of flamingos is called a "flamboyance."</p>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; This is Grestenberger Michael random fact blog page. All rights reserved.</p>
+</footer>
+
+<div id="welcomeMessage" class="hidden">Welcome to the Archive!</div>
+<div id="loading" class="hidden">Loading...</div>
+<button id="backToTop" class="hidden">↑ Top</button>
+
+<div class="bottom-settings-bar">
+    <div class="settings-group">
+        <span>Dark Mode:</span>
+        <label class="switch">
+            <input type="checkbox" id="darkToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="vertical-divider"></div>
+
+    <div class="font-controls">
+        <span>Font Size:</span>
+        <button type="button" data-size="small">Small</button>
+        <button type="button" data-size="medium">Medium</button>
+        <button type="button" data-size="large">Large</button>
+    </div>
+</div>
+
+<a href="sitemap.html" class="muted">Site Map</a>
+<script src="../js/main.js"></script>
+</body>
+</html>

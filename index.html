@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styling.css">
+    <title>Main Blog | Mikey Random Facts</title>
+</head>
+<body>
+
+<header>
+    <h1 id="siteTitle">Mikey Random Blog</h1>
+    <p id="userInfo" class="muted"></p>
+    <p class="muted">Your daily dose of the world's most fascinating and weird information.</p>
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="posts.html" class="nav-link">Posts</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" id="logout" class="nav-link">Logout</a>
+        <span id="user-display" style="margin-left: 15px; color: var(--color-accent); font-weight: bold;"></span>
+    </nav>
+</header>
+
+<div id="welcomeMessage" class="hidden" style="text-align: center; padding: var(--space-md); background: var(--color-primary); color: white; border-radius: var(--radius); margin-bottom: var(--space-md);">
+    Welcome! Ready for some mind-blowing facts? 🧠
+</div>
+
+<main>
+    <section>
+        <h2>Featured Post</h2>
+        <article class="featured-post">
+            <h3>Welcome to My Random Blog!</h3>
+            <p>This blog is a dedicated space for curiosity. Life is full of strange details—I'm just here to document them. Grab a coffee, stay a while, and learn something you didn't know five minutes ago.</p>
+            <button class="secondary" onclick="location.href='about.html'">Learn More About Me</button>
+        </article>
+
+        <h2 style="margin-top: var(--space-lg);">Recent Posts</h2>
+        <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <article>
+                <small class="muted">Nature</small>
+                <h3>The Three-Hearted Octopus 🐙</h3>
+                <p>Do you know that an octopus has three hearts? Two pump blood to the gills, and one handles the rest of the body. When they swim, the heart that delivers blood to the body actually stops beating!</p>
+            </article>
+
+            <article>
+                <small class="muted">Science</small>
+                <h3>Hotter Than The Sun ⚡</h3>
+                <p>Do you know that lightning is hotter than the surface of the sun? While the sun's surface is about 5,500°C, a bolt of lightning can reach 30,000°C!</p>
+            </article>
+
+            <article>
+                <small class="muted">Animals</small>
+                <h3>The Giraffe's Neck 🦒</h3>
+                <p>Do you know that Giraffes have the same number of neck bones as humans (seven)? Their vertebrae are just much larger, measuring up to 10 inches long each.</p>
+            </article>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <button id="refreshBtn" class="secondary" style="font-size: 0.8rem; padding: 5px 10px;">Refresh Posts</button>
+            </div>
+
+            <div id="post-container" style="display: flex; flex-direction: column; gap: var(--space-md);">
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <section>
+            <h3>Search Facts</h3>
+            <form>
+                <input type="search" name="search" placeholder="Search for a topic...">
+                <button type="submit" style="width: 100%; margin-top: 0.5rem;">Find Fact</button>
+            </form>
+        </section>
+
+        <section style="margin-top: var(--space-lg);">
+            <h3>Categories</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: var(--space-xs) 0; border-bottom: 1px solid #eee;">🐾 Animal Facts</li>
+                <li style="padding: var(--space-xs) 0; border-bottom: 1px solid #eee;">🌌 Universe</li>
+                <li style="padding: var(--space-xs) 0;">🌍 Our Earth</li>
+            </ul>
+        </section>
+
+        <section style="margin-top: var(--space-lg);">
+            <h3>Recent Comments</h3>
+            <div style="padding: var(--space-sm); background: var(--color-bg); border-radius: var(--radius); border-left: 3px solid var(--color-muted);">
+                <p class="muted" style="margin-bottom: 0;">"No comments yet because no one visit T-T."</p>
+            </div>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Be the first to say hi!</p>
+        </section>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; This is Grestenberger Michael random fact blog page. All rights reserved.</p>
+    <nav>
+        <a href="#" class="muted">Privacy</a> |
+        <a href="#" class="muted">Terms</a>
+    </nav>
+</footer>
+
+<div id="loading" class="hidden" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 2rem; border-radius: var(--radius); box-shadow: 0 0 20px rgba(0,0,0,0.1); z-index: 1000;">
+    <h3 style="margin: 0;">Loading...</h3>
+</div>
+
+<button id="backToTop" class="hidden">↑ Top</button>
+
+<div class="bottom-settings-bar">
+    <div class="settings-group">
+        <span>Dark Mode:</span>
+        <label class="switch">
+            <input type="checkbox" id="darkToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="vertical-divider"></div>
+
+    <div class="font-controls">
+        <span>Font Size:</span>
+        <button type="button" data-size="small">Small</button>
+        <button type="button" data-size="medium">Medium</button>
+        <button type="button" data-size="large">Large</button>
+    </div>
+</div>
+
+
+<a href="sitemap.html" class="muted">Site Map</a>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
